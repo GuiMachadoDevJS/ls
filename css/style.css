@@ -1,0 +1,173 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
+
+:root {
+  --color-navy: #07111e;
+  --color-navy-2: #0c1b2e;
+  --color-steel: #1c2026;
+  --color-steel-2: #14171c;
+  --color-gold: #d4af37;
+  --color-gold-light: #f5d77f;
+  --color-gold-dark: #99741c;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-navy);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-brand {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+/* Utilitários Dourado e Aço */
+.text-gold {
+  background-image: linear-gradient(100deg, #f5d77f 0%, #d4af37 45%, #99741c 75%, #f5d77f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gold {
+  background-image: linear-gradient(135deg, #f5d77f 0%, #d4af37 45%, #99741c 100%);
+}
+
+.bg-silver {
+  background-image: radial-gradient(circle at 30% 25%, #ffffff 0%, #d1d5db 30%, #6b7280 70%, #374151 100%);
+}
+
+.bg-brushed-steel {
+  background-color: #181b20;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0px, rgba(255, 255, 255, 0.018) 1px, transparent 1px, transparent 3px),
+    linear-gradient(180deg, #1c2026 0%, #14171c 100%);
+}
+
+/* Animações dos Anéis e Faíscas */
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes orbit-reverse {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes spark {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-orbit {
+  animation: orbit 40s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-reverse 60s linear infinite;
+}
+
+.animate-spark {
+  animation: spark 2.4s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+.animate-ping {
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orbit,
+  .animate-orbit-reverse,
+  .animate-spark,
+  .animate-float,
+  .animate-ping {
+    animation: none !important;
+  }
+}
+
+/* Botão Voltar ao Topo */
+#scroll-to-top {
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+#scroll-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+#scroll-to-top.hidden-btn {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(16px);
+}
+
+/* Menu Mobile */
+#mobile-menu {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#mobile-menu.menu-closed {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+#mobile-menu.menu-open {
+  max-height: 400px;
+  opacity: 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07111e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c2026;
+  border-radius: 5px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
