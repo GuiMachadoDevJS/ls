@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://lsmanutencaoindustrial.com.br/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/logo.png</image:loc>
+      <image:title>Logo LS Manutenção Industrial</image:title>
+      <image:caption>LS Manutenção Industrial - 30 anos de experiência em manutenção industrial</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/bg-industrial.png</image:loc>
+      <image:title>Oficina e Instalações Industriais LS Manutenção</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/perfil.png</image:loc>
+      <image:title>Responsável Técnico LS Manutenção Industrial</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/desmontagem.png</image:loc>
+      <image:title>Desmontagem e Manutenção de Redutor Industrial</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/eletrica.png</image:loc>
+      <image:title>Manutenção de Painel Elétrico de Comando Industrial</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/hidraulica.png</image:loc>
+      <image:title>Manutenção de Unidade Hidráulica Industrial</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/solda.png</image:loc>
+      <image:title>Soldas Especiais e Estruturais Industriais</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/alinhamento.png</image:loc>
+      <image:title>Alinhamento a Laser de Máquinas Industriais</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/motor.png</image:loc>
+      <image:title>Revisão de Motores Elétricos Industriais</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lsmanutencaoindustrial.com.br/public/mecanica.png</image:loc>
+      <image:title>Usinagem e Ajustagem Mecânica em Torno Operatriz</image:title>
+    </image:image>
+  </url>
+</urlset>
